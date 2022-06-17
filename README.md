@@ -1,6 +1,6 @@
 # video_classification
 video classification using transfer learning from establish model of resnet-50. In this post, the training set images are already included in the dataset
-
+```
 File structure
 ├── dataset
 │   ├── data
@@ -15,6 +15,7 @@ File structure
 │   └── plot.png
 ├── predict_video.ipynb
 └── train.ipynb
+```
  
  The photos for sports were taken from: https://github.com/jurjsorinliviu/Sports-Type-Classifier
  
