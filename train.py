@@ -23,14 +23,14 @@ import pickle
 import cv2
 import os
 
-dataset = 'D:/Deep Mind/Projects/Video classification/keras-video-classification/street_dataset/data'
-trained_model = 'model/activity.model'
-label_bin = 'model/lb.pickle'
+dataset = '/Users/Ivan_Feng_Jun_Kai/Desktop/SUTD/UROP-AI with Cancer Dianogsis/Video Analysis/video_classification/street_dataset/data'
+trained_model = '/Users/Ivan_Feng_Jun_Kai/Desktop/SUTD/UROP-AI with Cancer Dianogsis/Video Analysis/video_classification/model'
+label_bin = '/Users/Ivan_Feng_Jun_Kai/Desktop/SUTD/UROP-AI with Cancer Dianogsis/Video Analysis/video_classification/model/lb.pickle'
 epochs = 1
 plot = 'output/plot.png'
 # initialize the set of labels from the spots activity dataset we are
 # going to train our network on
-LABELS = set(["robbery", "protest", "accident"])
+LABELS = set(["badminton", "baseball", "basketball", "boxing", "chess", "cricket", "fencing", "football", "formula1", "gymnastics", "hockey", "ice_hockey", "kabaddi"])
 
 # grab the list of images in our dataset directory, then initialize
 # the list of data (i.e., images) and class images
@@ -146,8 +146,8 @@ plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
 plt.plot(np.arange(0, N), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, N), H.history["acc"], label="train_acc")
-plt.plot(np.arange(0, N), H.history["val_acc"], label="val_acc")
+plt.plot(np.arange(0, N), H.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, N), H.history["val_accuracy"], label="val_acc")
 plt.title("Training Loss and Accuracy on Dataset")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")

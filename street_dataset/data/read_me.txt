@@ -1,1 +1,0 @@
-make folder for each class and put the images related to them inside the class.

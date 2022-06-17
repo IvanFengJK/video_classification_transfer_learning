@@ -12,8 +12,8 @@ from random import randrange
 img_dir = 'output_images/'
 model = 'model/activity.model'
 label_bin = 'model/lb.pickle'
-input_dir = 'example_clips/accident.mp4'
-output_dir = 'output/lifting_128avg.avi'
+input_dir = 'example_clips/example3.mp4'
+output_dir = 'output/example3_out.avi'
 size = 128
 
 # load the trained model and label binarizer from disk
