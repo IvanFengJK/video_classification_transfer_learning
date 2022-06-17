@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # video_classification
 video classification using resnet  resnet-50 is trained on street dataset images(dataset contains classes:robbery,accident,traffic jam,
 protest and normal).After training the network,resnet can classify the different events in video with high accuracy.
@@ -21,3 +22,6 @@ some modifications are made so that when the input is given to the network and i
 then the images of accident are taken and stored in separate folder.
  
 [original post]=>https://www.pyimagesearch.com/2019/07/15/video-classification-with-keras-and-deep-learning/
+=======
+# video_classification_transfer_learning
+>>>>>>> 3c5bb28ef3f60c8f7f9b52d200c2543d214c32df
